@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('winnet__movie_8py_source.html',''); in
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment"># Animate the flows</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="namespacewinnet__movie.html#a47524b9515c6c36864dd9a31d8bfd4c6">  166</a></span>&#160;        anim = <a class="code" href="classsrc__files_1_1FlowAnimation_1_1FlowAnimation.html">FlowAnimation</a>(run_path, fig, **kwargs)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="namespacewinnet__movie.html#a9ce7c7724d63bac5179843de7de8af9a">  168</a></span>&#160;        ani = anim.get_funcanimation(frames=range(frame_min, frame_max))</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="namespacewinnet__movie.html#a9ce7c7724d63bac5179843de7de8af9a">  168</a></span>&#160;        ani = anim.get_funcanimation(frames=<a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(frame_min, frame_max))</div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="namespacewinnet__movie.html#a04ea3cf6d2c79c02d5ac0a6d336e19f1">  169</a></span>&#160;        ani.save(options.output_name, fps=int(options.interval))</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">else</span>: <span class="comment"># Parallel saving</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="comment"># Sanity check, does mpi4py exist?</span></div>
@@ -324,11 +324,12 @@ $(document).ready(function(){initNavTree('winnet__movie_8py_source.html',''); in
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment"># Animate the flows</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    anim = <a class="code" href="classsrc__files_1_1FlowAnimation_1_1FlowAnimation.html">FlowAnimation</a>(run_path, fig, **kwargs)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ani = anim.get_funcanimation(interval=int(options.interval), frames=range(frame_min, frame_max))</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ani = anim.get_funcanimation(interval=int(options.interval), frames=<a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(frame_min, frame_max))</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    plt.show()</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesrc__files_1_1wreader_html"><div class="ttname"><a href="namespacesrc__files_1_1wreader.html">src_files.wreader</a></div><div class="ttdef"><b>Definition:</b> <a href="wreader_8py_source.html#l00001">wreader.py:1</a></div></div>
+<div class="ttc" id="anamespaceplot__abundances_html_a7c400d59d9acd1bbc5a0dccafa25b369"><div class="ttname"><a href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">plot_abundances.range</a></div><div class="ttdeci">range</div><div class="ttdef"><b>Definition:</b> <a href="plot__abundances_8py_source.html#l00751">plot_abundances.py:751</a></div></div>
 <div class="ttc" id="anamespacesrc__files_1_1FlowAnimation_html"><div class="ttname"><a href="namespacesrc__files_1_1FlowAnimation.html">src_files.FlowAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="FlowAnimation_8py_source.html#l00001">FlowAnimation.py:1</a></div></div>
 <div class="ttc" id="aclasssrc__files_1_1wreader_1_1wreader_html"><div class="ttname"><a href="classsrc__files_1_1wreader_1_1wreader.html">src_files.wreader.wreader</a></div><div class="ttdef"><b>Definition:</b> <a href="wreader_8py_source.html#l00010">wreader.py:10</a></div></div>
 <div class="ttc" id="aclasssrc__files_1_1FlowAnimation_1_1FlowAnimation_html"><div class="ttname"><a href="classsrc__files_1_1FlowAnimation_1_1FlowAnimation.html">src_files.FlowAnimation.FlowAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="FlowAnimation_8py_source.html#l00020">FlowAnimation.py:20</a></div></div>

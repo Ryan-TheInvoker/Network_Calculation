@@ -155,13 +155,14 @@ $(document).ready(function(){initNavTree('create__trajectory_8py_source.html',''
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacecreate__trajectory.html#a309dae3cce73a27eb0f1ae4ac31fe2e4">   56</a></span>&#160;dens  = 2.404 * eta/(pi**2.) * ((kB*temperature)/(hbarc))**3. * m_u <span class="comment"># [g/ccm]</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"># Create ye column. Note that the network only uses the first value, so we can keep it constant</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacecreate__trajectory.html#aae426b37cfc32577157ad5e1dc782c11">   59</a></span>&#160;ye           = [ye_freezout <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(time))]</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacecreate__trajectory.html#aae426b37cfc32577157ad5e1dc782c11">   59</a></span>&#160;ye           = [ye_freezout <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(time))]</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"># Save the trajectory</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacecreate__trajectory.html#aaa412d686f4140f3f536383eb495ccde">   62</a></span>&#160;out = np.array([time,temperature,dens,ye]).T</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacecreate__trajectory.html#a4a74d160d108fffc1a624682751c9107">   63</a></span>&#160;np.savetxt(<span class="stringliteral">&#39;bbn.dat&#39;</span>,out,header=<span class="stringliteral">&#39;time[s], T9[GK], density[g/cm^3], Ye \n&#39;</span>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespaceplot__abundances_html_a7c400d59d9acd1bbc5a0dccafa25b369"><div class="ttname"><a href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">plot_abundances.range</a></div><div class="ttdeci">range</div><div class="ttdef"><b>Definition:</b> <a href="plot__abundances_8py_source.html#l00751">plot_abundances.py:751</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

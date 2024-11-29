@@ -29,7 +29,8 @@ var menudata={children:[
 {text:"Modules List",url:"namespaces.html"},
 {text:"Module Members",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html",children:[
-{text:"a",url:"namespacemembers.html#index_a"},
+{text:"_",url:"namespacemembers.html#index__5F"},
+{text:"a",url:"namespacemembers_a.html#index_a"},
 {text:"b",url:"namespacemembers_b.html#index_b"},
 {text:"c",url:"namespacemembers_c.html#index_c"},
 {text:"d",url:"namespacemembers_d.html#index_d"},
@@ -80,7 +81,8 @@ var menudata={children:[
 {text:"w",url:"namespacemembers_func_w.html#index_w"},
 {text:"y",url:"namespacemembers_func_y.html#index_y"}]},
 {text:"Variables",url:"namespacemembers_vars.html",children:[
-{text:"a",url:"namespacemembers_vars.html#index_a"},
+{text:"_",url:"namespacemembers_vars.html#index__5F"},
+{text:"a",url:"namespacemembers_vars_a.html#index_a"},
 {text:"b",url:"namespacemembers_vars_b.html#index_b"},
 {text:"c",url:"namespacemembers_vars_c.html#index_c"},
 {text:"d",url:"namespacemembers_vars_d.html#index_d"},

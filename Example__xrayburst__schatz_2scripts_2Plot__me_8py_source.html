@@ -108,9 +108,9 @@ $(document).ready(function(){initNavTree('Example__xrayburst__schatz_2scripts_2P
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    max_A = max(A)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    X_new = np.zeros([max_A+1,])</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(A)):</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(A)):</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        X_new[int(A[i])] += X[i]</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> np.array(range(max_A+1)),X_new</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> np.array(<a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(max_A+1)),X_new</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"># Load the final abundances of SkyNet (without calculating detailed balance there)</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;A,Z,N,Y,X = np.loadtxt(<span class="stringliteral">&quot;finab_SkyNet.dat&quot;</span>,unpack=<span class="keyword">True</span>)</div>
@@ -140,6 +140,7 @@ $(document).ready(function(){initNavTree('Example__xrayburst__schatz_2scripts_2P
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;plt.show()</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespaceplot__abundances_html_a7c400d59d9acd1bbc5a0dccafa25b369"><div class="ttname"><a href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">plot_abundances.range</a></div><div class="ttdeci">range</div><div class="ttdef"><b>Definition:</b> <a href="plot__abundances_8py_source.html#l00751">plot_abundances.py:751</a></div></div>
 <div class="ttc" id="anamespacePlot__me_html_aa1ef217547e34b8cc5461e25effeaa2d"><div class="ttname"><a href="namespacePlot__me.html#aa1ef217547e34b8cc5461e25effeaa2d">Plot_me.sum_over</a></div><div class="ttdeci">def sum_over(A, Y)</div><div class="ttdef"><b>Definition:</b> <a href="Example__AGB__cescutti_2scripts_2Plot__me_8py_source.html#l00011">Plot_me.py:11</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

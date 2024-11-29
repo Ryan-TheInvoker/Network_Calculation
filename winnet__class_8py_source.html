@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            ncols  = len(lines[2].split())</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            b= np.loadtxt(filename,skiprows=3,unpack=<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(ncols):</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(ncols):</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                fout[lines[2].split()[i]]= b[i]</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">elif</span> os.path.isfile(os.path.join(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a02a3c97b41568860e0888a3cce28956e">__path</a>,self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a9b3d03fe9bcbd15db111e59826c876a5">__hdf5_name</a>)):</div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;             list_nucs = [<a class="code" href="classbin_1_1class__files_1_1nucleus__class_1_1nucleus.html">nucleus</a>(name=x) <span class="keywordflow">for</span> x <span class="keywordflow">in</span> isotopes]</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;             <span class="comment"># Set the abundances</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;             <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(list_nucs)):</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;             <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(list_nucs)):</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                 list_nucs[i].set_Y(float(massfractions[i])/float(list_nucs[i].get_A()))</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;             self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#ad8abddc157e3168322bee23ebc3655b8">__seed_nuclei</a> = list_nucs</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
@@ -454,7 +454,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment"># Read it from the ascii files</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">if</span> amount_snaps != 0:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(amount_snaps):</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(amount_snaps):</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                currentfile = <span class="stringliteral">&#39;snapsh_&#39;</span>+str((i+1)).zfill(4)+<span class="stringliteral">&#39;.dat&#39;</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="comment">#Read time</span></div>
@@ -494,7 +494,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        path         = self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a02a3c97b41568860e0888a3cce28956e">__path</a>+<span class="stringliteral">&#39;snaps/&#39;</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        amount_snaps = len(os.listdir(path))</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(amount_snaps):</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(amount_snaps):</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            currentfile = <span class="stringliteral">&#39;snapsh_&#39;</span>+str((i+1)).zfill(4)+<span class="stringliteral">&#39;.dat&#39;</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="comment">#Read time</span></div>
@@ -519,7 +519,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#af04da7f77214ae8c3ec8e65f57807e4f">__finab_mass</a>, self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a107c356f1fb58d4a8cc458d8fa2c39a1">__finab_protons</a>, self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a25dfc5be6fca90751851514965621aca">__finab_neutrons</a>, self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a1f93fa97fe5a51ddddb1fc61236f0793">__finab_ab</a> = np.loadtxt(os.path.join(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a02a3c97b41568860e0888a3cce28956e">__path</a>,finab_name),usecols=[0,1,2,3],unpack=<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="comment">#Create instance of nuclei</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0177188c71a257b9c1c1967721abafd0">__finab_nuclei</a> = [<a class="code" href="classbin_1_1class__files_1_1nucleus__class_1_1nucleus.html">nucleus</a>(Z=int(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a107c356f1fb58d4a8cc458d8fa2c39a1">__finab_protons</a>[i]),N=int(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a25dfc5be6fca90751851514965621aca">__finab_neutrons</a>[i]),Y=self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a1f93fa97fe5a51ddddb1fc61236f0793">__finab_ab</a>[i]) <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#af04da7f77214ae8c3ec8e65f57807e4f">__finab_mass</a>)) ]</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0177188c71a257b9c1c1967721abafd0">__finab_nuclei</a> = [<a class="code" href="classbin_1_1class__files_1_1nucleus__class_1_1nucleus.html">nucleus</a>(Z=int(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a107c356f1fb58d4a8cc458d8fa2c39a1">__finab_protons</a>[i]),N=int(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a25dfc5be6fca90751851514965621aca">__finab_neutrons</a>[i]),Y=self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a1f93fa97fe5a51ddddb1fc61236f0793">__finab_ab</a>[i]) <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#af04da7f77214ae8c3ec8e65f57807e4f">__finab_mass</a>)) ]</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0177188c71a257b9c1c1967721abafd0">__finab_nuclei</a>.<a class="code" href="namespacetw__rate__module.html#a245abf84e3851a5ce7d9b88a55919e0e">sort</a>()</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="comment">#Get hydrogen out of it</span></div>
@@ -1067,7 +1067,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        a_tmp = [x.get_A() <span class="keywordflow">for</span> x <span class="keywordflow">in</span> nuc]</div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        Y_tmp = [x.get_Y() <span class="keywordflow">for</span> x <span class="keywordflow">in</span> nuc]</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160; </div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(a_tmp)):</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(a_tmp)):</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;            <span class="keywordflow">if</span> a_tmp[i] &gt; min_mass:</div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                <span class="keywordflow">break</span></div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160; </div>
@@ -1347,7 +1347,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        n = nuc.get_N()</div>
 <div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160; </div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160; </div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0f5d1d88a86d568d52e32f91bcc18a64">__neutrons</a>)):</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0f5d1d88a86d568d52e32f91bcc18a64">__neutrons</a>)):</div>
 <div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;            current_n = self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a0f5d1d88a86d568d52e32f91bcc18a64">__neutrons</a>[i]</div>
 <div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;            current_p = self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#ab667e562cd0920677a4bbfe3ac19fab4">__protons</a>[i]</div>
 <div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160; </div>
@@ -1768,7 +1768,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;        <span class="keywordflow">if</span> end==0:</div>
 <div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;            end = len(os.listdir(self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a02a3c97b41568860e0888a3cce28956e">__path</a>+<span class="stringliteral">&#39;flow/&#39;</span>))</div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160; </div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(start,end+1,1):</div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(start,end+1,1):</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;            fig = self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a702622b0c4d1456f304d80fcf97c5639">plot_flow</a>(i,plotaxis=[1,20,1,20],ilabel=1,imlabel=0,imagic=0,prange=4,iplot=2)</div>
 <div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;            fig.savefig(outputpath+<span class="stringliteral">&#39;flow_{n:04d}&#39;</span>.format(n=i))</div>
 <div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160; </div>
@@ -1828,7 +1828,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;        nzmax = int(max(max(zin),max(zout)))+1</div>
 <div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;        nnmax = int(max(max(nin),max(nout)))+1</div>
 <div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;        nzycheck = np.zeros([nnmax,nzmax,3])</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(nin)):</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(nin)):</div>
 <div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;          ni = int(nin[i])</div>
 <div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;          zi = int(zin[i])</div>
 <div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;          nzycheck[ni,zi,0] = 1</div>
@@ -1883,8 +1883,8 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;          patches = []</div>
 <div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;          color = []</div>
 <div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160; </div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(nzmax):</div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;            <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(nnmax):</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;            <span class="keywordflow">for</span> j <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nnmax):</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;              <span class="keywordflow">if</span> nzycheck[j,i,0]==1:</div>
 <div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;                <span class="comment"># abundance</span></div>
 <div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;                yab = nzycheck[j,i,1]</div>
@@ -1925,7 +1925,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;          ymax=0.</div>
 <div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;          xmax=0.</div>
 <div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160; </div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(nin)):</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(nin)):</div>
 <div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;            x = nin[i]</div>
 <div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;            y = zin[i]</div>
 <div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;            dx = nout[i]-nin[i]</div>
@@ -1968,7 +1968,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160; </div>
 <div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        <span class="comment"># plot element labels</span></div>
 <div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;        <span class="keywordflow">if</span> ilabel==1:</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> range(nzmax):</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
 <div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;            <span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;              nmin = min(np.argwhere(nzycheck[:,z,iarr]))[0]-1</div>
 <div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;              ax.text(nmin,z,self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#accf4413deeb3a0a660b83f6c60ab595a">__elname</a>[z],horizontalalignment=<span class="stringliteral">&#39;center&#39;</span>,verticalalignment=<span class="stringliteral">&#39;center&#39;</span>,fontsize=<span class="stringliteral">&#39;medium&#39;</span>,clip_on=<span class="keyword">True</span>)</div>
@@ -1977,8 +1977,8 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160; </div>
 <div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;        <span class="comment"># plot mass numbers</span></div>
 <div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;        <span class="keywordflow">if</span> imlabel==1:</div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> range(nzmax):</div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;             <span class="keywordflow">for</span> n <span class="keywordflow">in</span> range(nnmax):</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;             <span class="keywordflow">for</span> n <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nnmax):</div>
 <div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;                a = z+n</div>
 <div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;                <span class="keywordflow">if</span> nzycheck[n,z,iarr]==1:</div>
 <div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;                  ax.text(n,z,a,horizontalalignment=<span class="stringliteral">&#39;center&#39;</span>,verticalalignment=<span class="stringliteral">&#39;center&#39;</span>,fontsize=<span class="stringliteral">&#39;small&#39;</span>,clip_on=<span class="keyword">True</span>)</div>
@@ -2071,7 +2071,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;          nzmax = int(max(zin))+1</div>
 <div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160; </div>
 <div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;        nzycheck = np.zeros([nnmax,nzmax,3])</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(nin)):</div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(nin)):</div>
 <div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;          ni = int(nin[i])</div>
 <div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;          zi = int(zin[i])</div>
 <div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;          nzycheck[ni,zi,0] = 1</div>
@@ -2148,8 +2148,8 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;          patches = []</div>
 <div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;          color = []</div>
 <div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160; </div>
-<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(nzmax):</div>
-<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;            <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(nnmax):</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;            <span class="keywordflow">for</span> j <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nnmax):</div>
 <div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;              <span class="keywordflow">if</span> nzycheck[j,i,0]==1:</div>
 <div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;                <span class="comment"># abundance</span></div>
 <div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;                yab = nzycheck[j,i,1]</div>
@@ -2190,7 +2190,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;          ymax=0.</div>
 <div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;          xmax=0.</div>
 <div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160; </div>
-<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(nin)):</div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;          <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(nin)):</div>
 <div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;            x = nin[i]</div>
 <div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;            y = zin[i]</div>
 <div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;            dx = nout[i]-nin[i]</div>
@@ -2233,7 +2233,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160; </div>
 <div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;        <span class="comment"># plot element labels</span></div>
 <div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;        <span class="keywordflow">if</span> ilabel==1:</div>
-<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> range(nzmax):</div>
+<div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
 <div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;            <span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l02139"></a><span class="lineno"> 2139</span>&#160;              nmin = min(np.argwhere(nzycheck[:,z,iarr]))[0]-1</div>
 <div class="line"><a name="l02140"></a><span class="lineno"> 2140</span>&#160;              ax.text(nmin,z,self.<a class="code" href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#accf4413deeb3a0a660b83f6c60ab595a">__elname</a>[z],horizontalalignment=<span class="stringliteral">&#39;center&#39;</span>,verticalalignment=<span class="stringliteral">&#39;center&#39;</span>,fontsize=<span class="stringliteral">&#39;medium&#39;</span>,clip_on=<span class="keyword">True</span>)</div>
@@ -2242,8 +2242,8 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02143"></a><span class="lineno"> 2143</span>&#160; </div>
 <div class="line"><a name="l02144"></a><span class="lineno"> 2144</span>&#160;        <span class="comment"># plot mass numbers</span></div>
 <div class="line"><a name="l02145"></a><span class="lineno"> 2145</span>&#160;        <span class="keywordflow">if</span> imlabel==1:</div>
-<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> range(nzmax):</div>
-<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;             <span class="keywordflow">for</span> n <span class="keywordflow">in</span> range(nnmax):</div>
+<div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160;          <span class="keywordflow">for</span> z <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nzmax):</div>
+<div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160;             <span class="keywordflow">for</span> n <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(nnmax):</div>
 <div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160;                a = z+n</div>
 <div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;                <span class="keywordflow">if</span> nzycheck[n,z,iarr]==1:</div>
 <div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;                  ax.text(n,z,a,horizontalalignment=<span class="stringliteral">&#39;center&#39;</span>,verticalalignment=<span class="stringliteral">&#39;center&#39;</span>,fontsize=<span class="stringliteral">&#39;small&#39;</span>,clip_on=<span class="keyword">True</span>)</div>
@@ -2380,7 +2380,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;        <span class="comment"># Plot data</span></div>
 <div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;        ax.set_yscale(<span class="stringliteral">&#39;log&#39;</span>)</div>
 <div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;        ax.set_xscale(<span class="stringliteral">&#39;log&#39;</span>)</div>
-<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(labels)):</div>
+<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(labels)):</div>
 <div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;            <span class="keywordflow">if</span> i % 2 == 0:</div>
 <div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;                col = colors[int(i/2)]</div>
 <div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;                ax.plot(time,timescales[i],ls=<span class="stringliteral">&#39;-&#39;</span>,label=labels[i],color=col,**kwargs)</div>
@@ -2447,7 +2447,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02348"></a><span class="lineno"> 2348</span>&#160;            xy      = n,z</div>
 <div class="line"><a name="l02349"></a><span class="lineno"> 2349</span>&#160; </div>
 <div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160;            stable = <span class="keyword">False</span></div>
-<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(stable_z)):</div>
+<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(stable_z)):</div>
 <div class="line"><a name="l02352"></a><span class="lineno"> 2352</span>&#160;                <span class="keywordflow">if</span> (stable_z[i] == nuc.get_Z()) <span class="keywordflow">and</span> (stable_n[i] == nuc.get_N()):</div>
 <div class="line"><a name="l02353"></a><span class="lineno"> 2353</span>&#160;                    stable = <span class="keyword">True</span></div>
 <div class="line"><a name="l02354"></a><span class="lineno"> 2354</span>&#160;                    <span class="keywordflow">break</span></div>
@@ -2471,7 +2471,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02372"></a><span class="lineno"> 2372</span>&#160;                ax.add_patch(rect)</div>
 <div class="line"><a name="l02373"></a><span class="lineno"> 2373</span>&#160; </div>
 <div class="line"><a name="l02374"></a><span class="lineno"> 2374</span>&#160;        <span class="comment">#set the elementlabels</span></div>
-<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;        <span class="keywordflow">for</span> z <span class="keywordflow">in</span> range(amountprotons):</div>
+<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;        <span class="keywordflow">for</span> z <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(amountprotons):</div>
 <div class="line"><a name="l02376"></a><span class="lineno"> 2376</span>&#160; </div>
 <div class="line"><a name="l02377"></a><span class="lineno"> 2377</span>&#160;            min_n = amountneutrons</div>
 <div class="line"><a name="l02378"></a><span class="lineno"> 2378</span>&#160; </div>
@@ -2495,7 +2495,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02396"></a><span class="lineno"> 2396</span>&#160;                    ax.text(min_n - 1 - 0.4*len(name), z-0.2, name, fontsize = 5)</div>
 <div class="line"><a name="l02397"></a><span class="lineno"> 2397</span>&#160; </div>
 <div class="line"><a name="l02398"></a><span class="lineno"> 2398</span>&#160;        <span class="comment">#set the magic numbers</span></div>
-<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(magicnumbers)):</div>
+<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(magicnumbers)):</div>
 <div class="line"><a name="l02400"></a><span class="lineno"> 2400</span>&#160;            magic = magicnumbers[i]</div>
 <div class="line"><a name="l02401"></a><span class="lineno"> 2401</span>&#160; </div>
 <div class="line"><a name="l02402"></a><span class="lineno"> 2402</span>&#160;            <span class="comment">#neutron magic</span></div>
@@ -2663,7 +2663,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02564"></a><span class="lineno"> 2564</span>&#160;            zorders = []</div>
 <div class="line"><a name="l02565"></a><span class="lineno"> 2565</span>&#160;            stable_list = []</div>
 <div class="line"><a name="l02566"></a><span class="lineno"> 2566</span>&#160;            linewidths = []</div>
-<div class="line"><a name="l02567"></a><span class="lineno"> 2567</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(current_n)):</div>
+<div class="line"><a name="l02567"></a><span class="lineno"> 2567</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(current_n)):</div>
 <div class="line"><a name="l02568"></a><span class="lineno"> 2568</span>&#160;                n_tmp = current_n[i]</div>
 <div class="line"><a name="l02569"></a><span class="lineno"> 2569</span>&#160;                p_tmp = current_p[i]</div>
 <div class="line"><a name="l02570"></a><span class="lineno"> 2570</span>&#160;                xy     = n_tmp-0.5,p_tmp-0.5</div>
@@ -2715,7 +2715,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02616"></a><span class="lineno"> 2616</span>&#160;                magicnumbers = [8,20,28,50,82,126]</div>
 <div class="line"><a name="l02617"></a><span class="lineno"> 2617</span>&#160;                <span class="comment">#set the magic numbers</span></div>
 <div class="line"><a name="l02618"></a><span class="lineno"> 2618</span>&#160;                lines = []</div>
-<div class="line"><a name="l02619"></a><span class="lineno"> 2619</span>&#160;                <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(magicnumbers)):</div>
+<div class="line"><a name="l02619"></a><span class="lineno"> 2619</span>&#160;                <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(magicnumbers)):</div>
 <div class="line"><a name="l02620"></a><span class="lineno"> 2620</span>&#160;                    magic = magicnumbers[i]</div>
 <div class="line"><a name="l02621"></a><span class="lineno"> 2621</span>&#160; </div>
 <div class="line"><a name="l02622"></a><span class="lineno"> 2622</span>&#160;                    <span class="comment">#neutron magic</span></div>
@@ -2871,7 +2871,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02772"></a><span class="lineno"> 2772</span>&#160;        zorders = []</div>
 <div class="line"><a name="l02773"></a><span class="lineno"> 2773</span>&#160;        stable_list = []</div>
 <div class="line"><a name="l02774"></a><span class="lineno"> 2774</span>&#160;        linewidths = []</div>
-<div class="line"><a name="l02775"></a><span class="lineno"> 2775</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(current_n)):</div>
+<div class="line"><a name="l02775"></a><span class="lineno"> 2775</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(current_n)):</div>
 <div class="line"><a name="l02776"></a><span class="lineno"> 2776</span>&#160;            n_tmp = current_n[i]</div>
 <div class="line"><a name="l02777"></a><span class="lineno"> 2777</span>&#160;            p_tmp = current_p[i]</div>
 <div class="line"><a name="l02778"></a><span class="lineno"> 2778</span>&#160;            xy     = n_tmp-0.5,p_tmp-0.5</div>
@@ -2931,7 +2931,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02832"></a><span class="lineno"> 2832</span>&#160;        <span class="keywordflow">if</span> plot_magic:</div>
 <div class="line"><a name="l02833"></a><span class="lineno"> 2833</span>&#160;            magicnumbers = [8,20,28,50,82,126]</div>
 <div class="line"><a name="l02834"></a><span class="lineno"> 2834</span>&#160;            <span class="comment">#set the magic numbers</span></div>
-<div class="line"><a name="l02835"></a><span class="lineno"> 2835</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(magicnumbers)):</div>
+<div class="line"><a name="l02835"></a><span class="lineno"> 2835</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(magicnumbers)):</div>
 <div class="line"><a name="l02836"></a><span class="lineno"> 2836</span>&#160;                magic = magicnumbers[i]</div>
 <div class="line"><a name="l02837"></a><span class="lineno"> 2837</span>&#160; </div>
 <div class="line"><a name="l02838"></a><span class="lineno"> 2838</span>&#160;                <span class="comment">#neutron magic</span></div>
@@ -3024,12 +3024,12 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160; </div>
 <div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;        <span class="comment"># Add up mass fraction for equal mass numbers</span></div>
 <div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;        out_x = np.zeros(len(current_a))</div>
-<div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(current_a)):</div>
+<div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(current_a)):</div>
 <div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;            out_x[int(current_a[i])] += mafra_out[i]</div>
 <div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160; </div>
 <div class="line"><a name="l02931"></a><span class="lineno"> 2931</span>&#160;        <span class="keywordflow">if</span> A_range == <span class="keywordtype">None</span>:</div>
 <div class="line"><a name="l02932"></a><span class="lineno"> 2932</span>&#160;            <span class="comment"># Remove zeros from behind</span></div>
-<div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(current_a)):</div>
+<div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> <a class="code" href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">range</a>(len(current_a)):</div>
 <div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;                <span class="keywordflow">if</span> out_x[len(current_a)-1-i] &gt;= 1e-20:</div>
 <div class="line"><a name="l02935"></a><span class="lineno"> 2935</span>&#160;                    <span class="keywordflow">break</span></div>
 <div class="line"><a name="l02936"></a><span class="lineno"> 2936</span>&#160;            count = i</div>
@@ -3126,6 +3126,7 @@ $(document).ready(function(){initNavTree('winnet__class_8py_source.html',''); in
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_a715325d67156b1c3a61abcb1e5b8fbe6"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a715325d67156b1c3a61abcb1e5b8fbe6">bin.class_files.winnet_class.winnet.plot_final_A_Y</a></div><div class="ttdeci">def plot_final_A_Y(self, figure=None, axlabel=True, fig_is_ax=False, **kwargs)</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l01387">winnet_class.py:1387</a></div></div>
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_a29cf7eae137c0e983c5e9b4fd00c6ceb"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a29cf7eae137c0e983c5e9b4fd00c6ceb">bin.class_files.winnet_class.winnet.__engen_keywords</a></div><div class="ttdeci">__engen_keywords</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l00574">winnet_class.py:574</a></div></div>
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_a03dc9be038f1ac21eaa57e8cc704acf1"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a03dc9be038f1ac21eaa57e8cc704acf1">bin.class_files.winnet_class.winnet.__track_nuclei_names</a></div><div class="ttdeci">__track_nuclei_names</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l00115">winnet_class.py:115</a></div></div>
+<div class="ttc" id="anamespaceplot__abundances_html_a7c400d59d9acd1bbc5a0dccafa25b369"><div class="ttname"><a href="namespaceplot__abundances.html#a7c400d59d9acd1bbc5a0dccafa25b369">plot_abundances.range</a></div><div class="ttdeci">range</div><div class="ttdef"><b>Definition:</b> <a href="plot__abundances_8py_source.html#l00751">plot_abundances.py:751</a></div></div>
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_ac5bd05458217272c57fc0090494564df"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#ac5bd05458217272c57fc0090494564df">bin.class_files.winnet_class.winnet.get_mainout_yheavy</a></div><div class="ttdeci">def get_mainout_yheavy(self)</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l00642">winnet_class.py:642</a></div></div>
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_a31b386837a1f7660a8ee9d38f07a07d6"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a31b386837a1f7660a8ee9d38f07a07d6">bin.class_files.winnet_class.winnet.__finab_hydrogen</a></div><div class="ttdeci">__finab_hydrogen</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l00070">winnet_class.py:70</a></div></div>
 <div class="ttc" id="aclassbin_1_1class__files_1_1winnet__class_1_1winnet_html_a3129bdb8ffd7ffb94911e4b762336aa6"><div class="ttname"><a href="classbin_1_1class__files_1_1winnet__class_1_1winnet.html#a3129bdb8ffd7ffb94911e4b762336aa6">bin.class_files.winnet_class.winnet.__mainout_rad</a></div><div class="ttdeci">__mainout_rad</div><div class="ttdef"><b>Definition:</b> <a href="winnet__class_8py_source.html#l00100">winnet_class.py:100</a></div></div>
